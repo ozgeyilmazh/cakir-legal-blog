@@ -1,0 +1,75 @@
+{% load static %}
+<!-- Navbar Start -->
+<nav class="header-nav header-color container-fluid navbar-fixed-top" role="banner" style="margin-bottom: 10%">
+
+        <div class="navbar-header">
+
+            <!-- Telefon ekranları için menü butonu -->
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- İsim Soyisim veya Marka İsmi -->
+            <center>
+           <img src="{% static 'images/cakir3.png' %}"  class="logo wow slideInUp" width="20%" >
+            </center>
+        </div>
+
+        <nav class="collapse navbar-collapse" role="navigation">
+
+            <ul class="nav navbar-nav">
+                    <li class="wow slideInUp"><a href="/">Anasayfa <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown wow slideInUp">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >Kurumsal <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'hakkimizda' %}">Hakkımızda</a></li>
+                        <li><a href="{% url 'ekibimiz' %}">Ekibimiz</a></li>
+                        <li><a href="{% url 'bvmb' %}">Basın ve Medyada Biz</a></li>
+                        <li><a href="{% url 'odemebilgileri' %}">Ödeme Bilgileri</a></li>
+                        <li><a href="{% url 'sosyalsorumluluk' %}">Sosyal Sorumluluk</a></li>
+                      </ul>
+                    </li>
+                    <li class="wow slideInUp"><a href="{% url 'faaliyetalanlarimiz' %}">Faaliyet Alanlarımız<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown wow slideInUp">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'post:index' %}">Blog</a></li>
+                        <li><a href="{% url 'makale:index' %}">Makaleler</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown wow slideInUp">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bağlantılar ve Yararlı Linkler <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="https://www.istanbulbarosu.org.tr/" target="_blank">1- İstanbul Barosu</a></li>
+                        <li><a href="http://www.tuik.gov.tr/UstMenu.do?metod=temelist" target="_blank">2- ÜFE-TÜFE</a></li>
+                        <li><a href="https://parselsorgu.tkgm.gov.tr/" target="_blank">3- Tapu Sorgu</a></li>
+                        <li><a href="http://www.kazanci.com/kho2/ortak/gideravansi.htm" target="_blank">4- Dava Gider Hesaplama</a></li>
+                        <li><a href="https://gonderitakip.ptt.gov.tr/" target="_blank">5- Tebligat Sorgu</a></li>
+                        <li><a href="https://www.ticaretsicil.gov.tr/" target="_blank">6- Ticaret Sicil Sorgu</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown wow slideInUp">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">İletişim <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'bizeulasin' %}">Bize Ulaşın</a></li>
+                        <li><a href="{% url 'kariyer' %}">Kariyer</a></li>
+                        <li><a href="{% url 'bursbasvurusu' %}">Burs Başvurusu</a></li>
+                        <li><a href="{% url 'vekaletbilgileri' %}">Vekalet Bilgileri</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              <!-- Arama Çubuğu -->
+            <form class="navbar-form navbar-right wow slideInRight" role="search" method="GET" action="" >
+                <div class="input-group">
+                    <input class="form-control" type="text" name="q" placeholder="Search on blog" value="{{request.GET.q}}" >
+                    <span class="input-group-btn">
+                        <input class="btn btn-default" type="submit" value="Ara">
+                    </span>
+                </div>
+            </form>
+        </nav>
+
+</nav>

@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-space=1">
+    <title>{% block title %}  Çakır Legal Avukatlık ve Danışmanlık Hukuk Bürosu {% endblock %}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+    <body>
+
+        {% include 'header.html' %}
+        
+        {% include 'messages.html' %}
+        
+        {% block body %} 
+        
+        {% endblock %}
+        
+        {% include 'footer.html' %}
+    <script src="{% static 'js/jquery.min.js' %}">
+    </script>  
+    <script src="{% static 'js/bootstrap.min.js' %}">
+    </script>
+    <script src="{% static 'js/custom.js' %}">
+    </script>
+    <script src="{% static 'js/wow.min.js' %}">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+905321533249", // WhatsApp numaranızı buraya girin
+                call_to_action: "Merhaba, nasıl yardımcı olabilirim?", // Görünecek metin
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+
+    </body>
+    
+</html>

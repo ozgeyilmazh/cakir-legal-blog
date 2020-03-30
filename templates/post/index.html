@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}  Çakır Legal Avukatlık ve Danışmanlık Hukuk Bürosu {% endblock %}
+{% block body %}
+
+
+<div class="container wow slideInRight" style="margin-top: 10%">
+        {%  for post in posts  %}
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="thumbnail">
+                        <div class="caption">
+                        {% if post.image %}
+                        <img src="{{post.image.url}}" class="img-responsive">
+                        {% endif %}
+                        <h3>{{post.title}}<small style="color: cornsilk">     {{post.publishing_date | timesince}} önce</small></h3>
+                        <h4 style="color: bisque">Yazar: {{post.user.get_full_name}}</h4>
+                        <p>{{post.content | safe | linebreaks | truncatechars:150}}</p>
+                        <p><a href="{{ post.get_absolute_url }}" class="btn btn-primary" role="button">İncele</a>
+                        </p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {%  endfor  %}
+        <div class="row">
+            <div class="col-md-6 col-md-offset-5">
+                <div class="pagination pg-blue">
+                    <span class="step-links">
+                        {% if posts.has_previous %}
+                            <a href="?page={{ posts.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">Geri</a>
+                        {% endif %}
+
+                        <span class="current">
+                            Sayfa {{ posts.number }} of {{ posts.paginator.num_pages }}.
+                        </span>
+
+                        {% if posts.has_next %}
+                            <a href="?page={{ posts.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}">İleri</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+     
+{% endblock %}

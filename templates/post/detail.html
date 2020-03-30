@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container wow zoomIn" style="margin-top: 10%">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="thumbnail">
+                    {% if post.image %}
+                        <img src="{{ post.image.url }}" class="img-responsive" >
+                    {% endif %}
+                    <div class="caption">
+                        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a> <small style="color: beige;">{{ post.publishing_date }}</small></h3>
+                        <h4 style="color: bisque">Yazar: {{ post.user.get_full_name }}</h4>
+                        <p>{{ post.content|safe|linebreaks }}</p>
+                      
+                    </div>
+                </div>
+                <div class="col-md-12 yorum">
+                <br><br><hr>
+                <h3>Yorum Ekle:</h3>
+                {% include 'post/comments.html' %}
+                <hr/>
+                
+                <h3>Yorumlar:</h3>
+                 <div class="col-md-12-offset article">
+                {% for comment in post.comments.all %}
+                    {% if  comment.approved_comment %}
+                        <div class="comment">
+                            <div class="date" style="color: wheat; float: left">
+                                {% if not comment.approved_comment %}
+                                    <a class="btn btn-default" href="{% url 'comment_remove' pk=comment.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+                                    <a class="btn btn-default" href="{% url 'comment_approve' pk=comment.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+                                {% endif %}
+                            </div>
+                            <h4 style="color: wheat; float: left">{{ comment.name }} | <small style="color: wheat">{{ comment.created_date|timesince }} önce </small></h4>
+                            <br /><br />
+                            {{ comment.content|linebreaks }}
+                            <br/>
+                            
+                        </div>
+                     
+                        {% endif %}
+                    
+                {% endfor %}
+                     
+                     
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
