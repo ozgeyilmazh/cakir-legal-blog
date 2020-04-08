@@ -1,0 +1,61 @@
+
+/* Small Devices*/
+@media only screen and (max-width: 600px) {
+    .anasayfa-grid{
+        margin-top: 30%;
+    }
+   .social-icons li {
+        margin-right: 16%;
+    }
+    .logo {
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .anasayfa-grid{
+        margin-top: 30%;
+    }
+    .logo {
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .anasayfa-grid{
+        margin-top: 40%;
+    }
+    .baslik h3 {
+        margin-right: 7%;
+    }
+    .logo {
+        width: 25%;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .anasayfa-grid{
+        margin-top: 25%;
+    }
+    .baslik h3 {
+        margin-right: 6%;
+    }
+    .logo {
+        width: 20%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .anasayfa-grid{
+        margin-top: 15%;
+    }
+    .logo {
+        width: 20%;
+    }
+}

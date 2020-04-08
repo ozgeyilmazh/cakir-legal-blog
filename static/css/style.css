@@ -1,0 +1,464 @@
+body {
+    margin: 0;
+    background: #1c92d2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-color{
+   background: #1c92d2; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.anasayfa-grid {
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 10%;
+}
+.header-nav {
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.header-nav ul {
+    margin-left: 3%;
+}
+
+.header-nav a {
+    margin-top: 10px;
+    color: #03588C;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-nav a:hover {
+    color: maroon;
+}
+
+.nav > li > a:hover {
+
+    background-color: transparent;
+}
+.btn-renk, .navbar-toggle {
+    background-color: RGBA(0,0,0,0.5);
+}
+.navbar-toggle .icon-bar, .navbar-toggle .icon-bar+.icon-bar {
+    background-color: midnightblue;
+}
+.navbar-nav .open .dropdown-menu>li>a {
+    color: bisque;
+}
+.navbar-nav .open .dropdown-menu>li>a:hover {
+    background-color: rgba(0,0,0,0.5);    
+    
+}
+.navbar-nav .open .dropdown-menu>li>a {
+    background-blend-mode: saturation;
+    color: wheat;
+    border-radius: 10px;
+    margin: 0;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    color: rgba(0,0,0,0.8);
+    border-radius: 10px;
+    margin: 0;
+}
+.nav li {
+    border-radius: 10px;
+    margin-left: 3px;
+}
+.nav a:hover {
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.dropdown-menu {
+    background-color: midnightblue;
+}
+.input-group {
+    margin-top: 4%;
+    color: wheat;
+}
+/*Anasayfa*/
+.general {
+    background-image: url("https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    /* Full height */
+    background-size: cover;
+    height: 50%;
+    margin-bottom: 5%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+.baslik {
+    color: beige;
+}
+.baslik h3 {
+    border-radius: 20px;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(0,0,0,0.3);
+}
+.buton {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.btn-header {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 100px;
+    font-size: 19px;
+    border-color: wheat;
+    background-color: rgba(0,0,0,0.7);
+}
+.btn-header:hover {
+    opacity: .5;
+    border-color: rgba(wheat,0.5);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-header:focus,
+.btn-header:active,
+.btn-header:visited {
+    background-color: midnightblue;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.general a {
+    font-family: 'Raleway', sans-serif;
+    color: beige;
+}
+.general a:hover {
+   color: beige;
+}
+
+.slider{
+    background-image: url("https://images.unsplash.com/photo-1496487611274-f4cd790205d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80");
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+}
+
+.p-left  {
+    background: RGBA(0,0,0,0.5);
+    font-family: 'Raleway', sans-serif;
+    opacity: .9;
+    box-shadow: none;
+    border-color: transparent;
+    border-radius: 100px;
+    padding: 10px 30px 8px 30px;
+    color: beige;
+    font-weight: 600;
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 2%
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.p-right {
+    background: RGBA(0,0,0,0.5);
+    font-family: 'Raleway', sans-serif;
+    opacity: .9;
+    box-shadow: none;
+    border-color: transparent;
+    border-radius: 100px;
+    padding: 10px 30px 8px 30px;
+    color: beige;
+    font-weight: 600;
+    float: right;
+    margin-top: 6%; 
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.p-left:hover , .p-right:hover {
+    color: maroon;
+    font-weight: 600;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.ol-class {
+    color: rgba(255,255,255,0.5);
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.ol-class-ana {
+    color: rgba(0,0,0,0.5);
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.ol-class-ana li {
+    color: rgba(0,0,0,0.5);
+}
+ 
+/* Footer */
+
+
+.social {
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 50px;
+    background-color: #D9D2B0;
+    border-radius: 30px;
+  }  
+.social-icons li {
+  padding: 1%;
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:30px;
+  height:30px;
+  margin: 10px;
+ 
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -4%;
+    width: 50%;
+}
+#copyright p {
+    color: rgba(0,0,0,0.5);
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#copyright p a {
+    text-decoration: none;
+    color: wheat;
+}
+
+/*Hakkımızda*/
+
+.article {
+    margin-top: 3%;
+    background-color: RGBA(0,0,0,0.25);
+    border-radius: 10px;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    clear:both; 
+    overflow:hidden;
+}
+
+
+.article h2:after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    width:60px;
+    height: 2px;
+    background-color: #fff200;
+    margin-left: -30px;
+}
+.article p {
+    font-size: 14px;
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+}
+.article h2 {
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+}
+
+.odeme {
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5%;
+    color: darkslateblue;
+    border-radius: 6px;
+    background-color: wheat;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.odeme:hover {
+    color: brown;
+    background-color: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.cardd {
+    text-align: center;
+    color: wheat;
+    width: 18rem;
+}
+
+.cardd h4{
+    margin-bottom: 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-iletisim,
+.btn-iletisim:focus,
+.btn-iletisim:active,
+.btn-iletisim:visited {
+    background-color: RGBA(0,0,255,0.3);
+    padding: 10%;
+    color: wheat;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-iletisim:hover {
+    background-color: RGBA(0,0,0,0.6);
+    color: brown;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+
+
+/* Sosyal Sorumluluk */
+
+.sosyal-sorumluluk-grid {
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.btn-faaliyet,
+.btn-faaliyet:focus,
+.btn-faaliyet:active,
+.btn-faaliyet:visited {
+    background-color: transparent;
+    color: beige;
+    font-family: 'Raleway', sans-serif;
+    border-color: wheat;
+    border-radius: 10px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.btn-faaliyet:hover {
+    color: rebeccapurple;
+}
+
+
+/* pagination */
+
+.pagination,
+.pagination:focus,
+.pagination:active,
+.pagination:visited{
+    color: wheat;
+    background-color: midnightblue;
+    padding: 3%;
+    border-radius: 10px;
+    border-color: wheat;
+    font-family: 'Raleway', sans-serif;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.pagination:hover {
+    color: darkblue;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.pagination a {
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.pagination a:hover {
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+}
+.caption p, a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: bisque;
+}
+
+.thumbnail {
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    margin-top: 30px;
+}
+.thumbnail h3 {
+    font-weight: 700;
+}
+.thumbnail h3, h4, p {
+    color: bisque;
+    font-family: 'Raleway', sans-serif;
+}
+.yorum h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    color: wheat;
+}
+.yorum p {
+    color: bisque;
+    font-family: 'Raleway', sans-serif;
+}
+.control-label {
+    color: wheat;
+    font-family: 'Raleway', sans-serif;
+}
+.comment p{
+    font-family: 'Raleway', sans-serif;
+    color: beige;
+    float: left;
+}
+
