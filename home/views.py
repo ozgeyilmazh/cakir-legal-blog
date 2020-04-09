@@ -8,15 +8,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 
 def home_view(request):
-    if request.user.is_authenticated():
-        context= {
-            'isim' : 'Ozzzge',
-        }
-    else:
-        context = {
-            'isim' : ' Misafir',
-        }
-    return render(request, 'home.html', context)
+    return render(request, 'home.html')
 
 def hakkimizda_view(request):
     return render(request, 'kurumsal/hakkimizda.html')

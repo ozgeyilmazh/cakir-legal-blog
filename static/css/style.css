@@ -1,15 +1,16 @@
 body {
     margin: 0;
-    background: #1c92d2; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Raleway', sans-serif;
 }
 
 .header-color{
-   background: #1c92d2; /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #1c92d2, #f2fcfe); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #1c92d2, #f2fcfe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .anasayfa-grid {
     text-align: center;
@@ -79,7 +80,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: midnightblue;
+    background-color: steelblue;
 }
 .input-group {
     margin-top: 4%;
@@ -102,7 +103,7 @@ body {
 .baslik {
     color: beige;
 }
-.baslik h3 {
+.baslik h2 {
     border-radius: 20px;
     padding: 3%;
     text-align: center;
@@ -206,7 +207,7 @@ body {
 }
 
 .ol-class {
-    color: rgba(255,255,255,0.5);
+    color: white;
     text-align: left;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
@@ -294,12 +295,14 @@ body {
     margin-left: -30px;
 }
 .article p {
-    font-size: 14px;
-    color: wheat;
+    font-size: 16px;
+    color: white;
     font-family: 'Raleway', sans-serif;
 }
 .article h2 {
-    color: wheat;
+    font-weight: 700;
+    color: beige;
+    font-size: 30px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -324,20 +327,22 @@ body {
 }
 .cardd {
     text-align: center;
-    color: wheat;
     width: 18rem;
 }
 
 .cardd h4{
-    margin-bottom: 10%;
+    color: white;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
 }
-
+.card-title {
+    margin-bottom: 20%;
+}
 .btn-iletisim,
 .btn-iletisim:focus,
 .btn-iletisim:active,
 .btn-iletisim:visited {
-    background-color: RGBA(0,0,255,0.3);
+    background-color: steelblue;
     padding: 10%;
     color: wheat;
     border-radius: 10px;
@@ -348,7 +353,7 @@ body {
     -o-transition: all 1s;
 }
 .btn-iletisim:hover {
-    background-color: RGBA(0,0,0,0.6);
+    background-color: white;
     color: brown;
     transition: all 1s;
     -webkit-transition: all 1s;
@@ -374,6 +379,8 @@ body {
 .btn-faaliyet:visited {
     background-color: transparent;
     color: beige;
+    font-weight: bold;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
     border-color: wheat;
     border-radius: 10px;
