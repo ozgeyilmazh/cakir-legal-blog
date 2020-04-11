@@ -38,7 +38,7 @@ body {
 }
 
 .header-nav a:hover {
-    color: maroon;
+    color: rebeccapurple;
 }
 
 .nav > li > a:hover {
@@ -59,10 +59,12 @@ body {
     
 }
 .navbar-nav .open .dropdown-menu>li>a {
+    background-color: steelblue;
     background-blend-mode: saturation;
     color: wheat;
     border-radius: 10px;
     margin: 0;
+    margin-bottom: 3px;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     color: rgba(0,0,0,0.8);
@@ -166,45 +168,12 @@ body {
 }
 
 .p-left  {
-    background: RGBA(0,0,0,0.5);
-    font-family: 'Raleway', sans-serif;
-    opacity: .9;
-    box-shadow: none;
-    border-color: transparent;
-    border-radius: 100px;
-    padding: 10px 30px 8px 30px;
-    color: beige;
-    font-weight: 600;
     float: left;
-    margin-top: 4%;
-    margin-bottom: 2%
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
 }
 .p-right {
-    background: RGBA(0,0,0,0.5);
-    font-family: 'Raleway', sans-serif;
-    opacity: .9;
-    box-shadow: none;
-    border-color: transparent;
-    border-radius: 100px;
-    padding: 10px 30px 8px 30px;
-    color: beige;
-    font-weight: 600;
     float: right;
-    margin-top: 6%; 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
 }
-.p-left:hover , .p-right:hover {
-    color: maroon;
-    font-weight: 600;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -o-transition: all 1s;
-}
+
 
 .ol-class {
     color: white;
@@ -380,7 +349,7 @@ body {
     background-color: transparent;
     color: beige;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Raleway', sans-serif;
     border-color: wheat;
     border-radius: 10px;
@@ -469,3 +438,130 @@ body {
     float: left;
 }
 
+.article2 {
+    margin-top: 3%;
+    background-color: #436296;
+    border-radius: 10px;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    clear:both; 
+    overflow:hidden;
+}
+
+
+.article2 h2:after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    width:60px;
+    height: 2px;
+    background-color: #fff200;
+    margin-left: -30px;
+}
+.article2 p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+.article2 h2 {
+    font-weight: 700;
+    color: beige;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Small Devices*/
+@media only screen and (max-width: 600px) {
+    .anasayfa-grid{
+        margin-top: 30%;
+    }
+   .social-icons li {
+        margin-right: 16%;
+    }
+    .logo {
+        width: 40%;
+        margin-left: 5%;
+    }
+    .p-left{
+        float: none;
+    }
+    .p-right {
+        float: none;
+    }
+}    
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .anasayfa-grid{
+        margin-top: 30%;
+    }
+    .logo {
+        width: 40%;
+        margin-left: 5%;
+    }
+    .p-left{
+        float: none;
+    }
+    .p-right {
+        float: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .anasayfa-grid{
+        margin-top: 40%;
+    }
+    .baslik h3 {
+        margin-right: 7%;
+    }
+    .logo {
+        width: 25%;
+    }
+    .p-left{
+        float: left;
+    }
+    .p-right {
+        float: right;
+    }
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .anasayfa-grid{
+        margin-top: 25%;
+    }
+    .baslik h3 {
+        margin-right: 6%;
+    }
+    .logo {
+        width: 20%;
+    }
+    .p-left{
+        float: left;
+    }
+    .p-right {
+        float: right;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .anasayfa-grid{
+        margin-top: 15%;
+    }
+    .logo {
+        width: 20%;
+    }
+    .p-left{
+        float: left;
+    }
+    .p-right {
+        float: right;
+    }
+}
