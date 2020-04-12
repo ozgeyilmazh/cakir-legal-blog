@@ -460,6 +460,7 @@ body {
 
 
 /* Small Devices*/
+ 
 @media only screen and (max-width: 600px) {
     .anasayfa-grid{
         margin-top: 30%;
@@ -476,21 +477,21 @@ body {
     .btn-faaliyet-l:active,
     .btn-faaliyet-l:visited{
         float: none;
-        font-size: 14px;
+        font-size: 12px;
     }
     .btn-faaliyet-r,
     .btn-faaliyet-r:focus,
     .btn-faaliyet-r:active,
     .btn-faaliyet-r:visited {
         float: none;
-        font-size: 14px;
+        font-size: 12px;
     }
     .ol-class{
-        font-size: 16px;
+        font-size: 14px;
     }
     iframe {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }    
 
