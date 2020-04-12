@@ -241,7 +241,7 @@ body {
 
 .article {
     margin-top: 3%;
-    background-color: RGBA(0,0,0,0.25);
+    background-color:  #436296;
     border-radius: 10px;
     padding-top: 4%;
     padding-bottom: 6%;
@@ -438,41 +438,6 @@ body {
     float: left;
 }
 
-.article2 {
-    margin-top: 3%;
-    background-color: #436296;
-    border-radius: 10px;
-    padding-top: 4%;
-    padding-bottom: 6%;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    clear:both; 
-    overflow:hidden;
-}
-
-
-.article2 h2:after {
-    content: "";
-    position: absolute;
-    bottom: 10%;
-    left:50%;
-    width:60px;
-    height: 2px;
-    background-color: #fff200;
-    margin-left: -30px;
-}
-.article2 p {
-    font-size: 16px;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-}
-.article2 h2 {
-    font-weight: 700;
-    color: beige;
-    font-size: 30px;
-    font-family: 'Raleway', sans-serif;
-}
 
 /* Small Devices*/
 @media only screen and (max-width: 600px) {
