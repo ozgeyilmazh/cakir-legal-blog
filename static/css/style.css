@@ -342,10 +342,10 @@ body {
     position: fixed;
 }
 
-.btn-faaliyet,
-.btn-faaliyet:focus,
-.btn-faaliyet:active,
-.btn-faaliyet:visited {
+.btn-faaliyet-r,
+.btn-faaliyet-r:focus,
+.btn-faaliyet-r:active,
+.btn-faaliyet-r:visited {
     background-color: transparent;
     color: beige;
     font-weight: bold;
@@ -353,15 +353,35 @@ body {
     font-family: 'Raleway', sans-serif;
     border-color: wheat;
     border-radius: 10px;
+    float: right;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
 }
 
-.btn-faaliyet:hover {
-    color: rebeccapurple;
+.btn-faaliyet-r:hover {
+    color: beige;
+}
+.btn-faaliyet-l,
+.btn-faaliyet-l:focus,
+.btn-faaliyet-l:active,
+.btn-faaliyet-l:visited {
+    background-color: transparent;
+    color: beige;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    border-color: wheat;
+    border-radius: 10px;
+    float: left;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
 }
 
+.btn-faaliyet-l:hover {
+    color: beige;
+}
 
 /* pagination */
 
@@ -409,7 +429,7 @@ body {
 }
 
 .thumbnail {
-    background-color: rgba(0,0,0,0.5);
+    background-color: #436296;
     border: none;
     margin-top: 30px;
 }
@@ -451,11 +471,26 @@ body {
         width: 40%;
         margin-left: 5%;
     }
-    .p-left{
+    .btn-faaliyet-l,
+    .btn-faaliyet-l:focus,
+    .btn-faaliyet-l:active,
+    .btn-faaliyet-l:visited{
         float: none;
+        font-size: 14px;
     }
-    .p-right {
+    .btn-faaliyet-r,
+    .btn-faaliyet-r:focus,
+    .btn-faaliyet-r:active,
+    .btn-faaliyet-r:visited {
         float: none;
+        font-size: 14px;
+    }
+    .ol-class{
+        font-size: 16px;
+    }
+    iframe {
+        width: 300px;
+        height: 300px;
     }
 }    
 
@@ -470,17 +505,32 @@ body {
         width: 40%;
         margin-left: 5%;
     }
-    .p-left{
+    .btn-faaliyet-l,
+    .btn-faaliyet-l:focus,
+    .btn-faaliyet-l:active,
+    .btn-faaliyet-l:visited{
         float: none;
+        font-size: 14px;
     }
-    .p-right {
+    .btn-faaliyet-r,
+    .btn-faaliyet-r:focus,
+    .btn-faaliyet-r:active,
+    .btn-faaliyet-r:visited {
         float: none;
+        font-size: 14px;
+    }
+    .ol-class{
+        font-size: 16px;
+    }
+    iframe {
+        width: 450px;
+        height: 450px;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .anasayfa-grid{
-        margin-top: 40%;
+        margin-top: 35%;
     }
     .baslik h3 {
         margin-right: 7%;
@@ -488,18 +538,32 @@ body {
     .logo {
         width: 25%;
     }
-    .p-left{
-        float: left;
+    .btn-faaliyet-l,
+    .btn-faaliyet-l:focus,
+    .btn-faaliyet-l:active,
+    .btn-faaliyet-l:visited{
+        float: none;
+        font-size: 18px;
     }
-    .p-right {
-        float: right;
+    .btn-faaliyet-r,
+    .btn-faaliyet-r:focus,
+    .btn-faaliyet-r:active,
+    .btn-faaliyet-r:visited {
+        float: none;
+        font-size: 18px;
     }
-
+    .ol-class{
+        font-size: 18px;
+    }
+    iframe {
+        width: 600px;
+        height: 450px;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .anasayfa-grid{
-        margin-top: 25%;
+        margin-top: 35%;
     }
     .baslik h3 {
         margin-right: 6%;
@@ -507,12 +571,42 @@ body {
     .logo {
         width: 20%;
     }
-    .p-left{
+    .btn-faaliyet-l,
+    .btn-faaliyet-l:focus,
+    .btn-faaliyet-l:active,
+    .btn-faaliyet-l:visited {
+        background-color: transparent;
+        color: beige;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        border-color: wheat;
+        border-radius: 10px;
         float: left;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
     }
-    .p-right {
+    .btn-faaliyet-r,
+    .btn-faaliyet-r:focus,
+    .btn-faaliyet-r:active,
+    .btn-faaliyet-r:visited {
+        background-color: transparent;
+        color: beige;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        border-color: wheat;
+        border-radius: 10px;
         float: right;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
     }
+    .ol-class{
+        font-size: 20px;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -523,10 +617,39 @@ body {
     .logo {
         width: 20%;
     }
-    .p-left{
+    .btn-faaliyet-l,
+    .btn-faaliyet-l:focus,
+    .btn-faaliyet-l:active,
+    .btn-faaliyet-l:visited {
+        background-color: transparent;
+        color: beige;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        border-color: wheat;
+        border-radius: 10px;
         float: left;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
     }
-    .p-right {
+    .btn-faaliyet-r,
+    .btn-faaliyet-r:focus,
+    .btn-faaliyet-r:active,
+    .btn-faaliyet-r:visited {
+        background-color: transparent;
+        color: beige;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+        border-color: wheat;
+        border-radius: 10px;
         float: right;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    .ol-class{
+        font-size: 20px;
     }
 }
