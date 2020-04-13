@@ -104,13 +104,17 @@ body {
 }
 .baslik {
     color: beige;
+    
 }
 .baslik h2 {
+    padding: 2%;
+    width: 90%;
+    margin: auto;
     border-radius: 20px;
-    padding: 3%;
     text-align: center;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
-    background: rgb(0,0,0,0.3);
+    background: rgba(0,0,0,0.3);
 }
 .buton {
     font-family: 'Raleway', sans-serif;
@@ -477,14 +481,18 @@ body {
     .btn-faaliyet-l:active,
     .btn-faaliyet-l:visited{
         float: none;
-        font-size: 12px;
+        font-size: 10px;
     }
     .btn-faaliyet-r,
     .btn-faaliyet-r:focus,
     .btn-faaliyet-r:active,
     .btn-faaliyet-r:visited {
         float: none;
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .h3, h3 {
+    width: 50%;
+    margin: 0;
     }
     .ol-class{
         font-size: 14px;
@@ -617,6 +625,9 @@ body {
     }
     .logo {
         width: 20%;
+    }
+    .baslik h3 {
+        margin-right: 5%;
     }
     .btn-faaliyet-l,
     .btn-faaliyet-l:focus,
